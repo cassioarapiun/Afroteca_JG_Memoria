@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Over</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/gameover.css">
+</head>
+<body>
+  <div class="game-over">
+    <h1>Game Over</h1>
+    <p>Parabéns, <span id="playerName"></span>! Sua pontuação foi de: <span id="playerScore"></span>.</p>
+    <button id="biographyButton">Conheça mais sobre os autores</button> <!-- Alterado o ID do botão -->
+    <button id="backToLoginButton">Voltar ao Início</button>
+  </div>
+  <script>
+    const playerName = localStorage.getItem('player');
+    const playerScore = localStorage.getItem('score');
+
+    document.getElementById('playerName').textContent = playerName;
+    document.getElementById('playerScore').textContent = playerScore;
+    
+    document.getElementById('biographyButton').addEventListener('click', function() {
+      window.location = './pages/biografia.html'; // Redireciona para a página de biografia
+    });
+
+    document.getElementById('backToLoginButton').addEventListener('click', function() {
+      window.location = './index.html'; // Redireciona para a tela de login
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .game-over {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px; /* Aumentando a largura para acomodar os botões */
+    width: 90%;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-over:hover {
+    transform: translateY(-5px);
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  #playerName {
+    font-weight: bold;
+    margin-right: 10px; /* Adicionando espaçamento entre o nome e os botões */
+  }
+  
+  #biographyButton,
+  #backToLoginButton {
+    background-color: #72433e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  #pdfButton:hover,
+  #backToLoginButton:hover {
+    background-color: #573129;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adicionando espaçamento entre os botões e os outros elementos */
+  }
+  
+  #backToLoginButton {
+    margin-left: 10px; /* Adicionando espaçamento entre os botões */
+  }
+  
